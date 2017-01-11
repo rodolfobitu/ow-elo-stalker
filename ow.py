@@ -2,10 +2,17 @@ import scheduler
 import logging
 import time
 import schedule
+import psycopg2
+import urllib
 
 def get_ranked_job():
-	
+	urllib.request.urlopen
 
+
+def get_users():
+	conn = psycopg2.conn(host=db.host, port=db.port, database=db.database)
+	cur = conn.cursor()
+	
 
 def main():
 	shedule.every(10).minutes.do(get_ranked_job)
