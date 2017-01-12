@@ -1,0 +1,7 @@
+api: 'https://api.lootbox.eu/'
+host: 'localhost'
+port: 5432
+database: 'ow'
+users-query: 'users.sql'
+insert-rank: 'insert_rank.sql'
+
