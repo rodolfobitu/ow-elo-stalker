@@ -3,4 +3,5 @@
 cd /rep/ow
 
 pip3 install -r req.txt
-python3 ow.py
+python3 ow.py >>/tmp/ow.log
+
