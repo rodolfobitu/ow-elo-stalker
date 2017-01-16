@@ -4,7 +4,6 @@ import schedule
 import psycopg2
 import urllib.request
 import json
-import time
 import datetime
 import yaml
 import sys
