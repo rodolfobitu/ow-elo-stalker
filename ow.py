@@ -49,7 +49,7 @@ def get_users(cur):
 
 
 def connect():
-	return psycopg2.connect(host=config['host'], port=config['port'], database=config['database'])
+	return psycopg2.connect(user=config['user'], password=config['password'], host=config['host'], port=config['port'], database=config['database'])
 
 def main():
 	schedule.clear()
