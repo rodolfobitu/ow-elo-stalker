@@ -8,7 +8,7 @@ create table ow.users (
 );
 
 create table ow.users_ranked (
-  timestamp timestamp,
+  timestamp timestamp without time zone default (now() at time zone 'utc'),
   user_id int4 references ow.users(id),
   elo integer
-)
+);
