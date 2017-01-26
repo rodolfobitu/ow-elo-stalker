@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ow user select</title>
+</head>
+<body>
+
+<form action="/ranks" method="post">
+    <select name="user">
+    {% for user in users %}
+        <option value={{ str(user[0])+'-'+user[1] }}>{{ user[1] }}</option>
+    {% endfor %}
+    </select>
+    <select name="time">
+    {% for r in range(1,10)%}
+        <option value={{ r }}>{{ str(r) + ' day(s) ago'  }}</option>
+    {% endfor %}
+        <option value="0"> all </option>
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
