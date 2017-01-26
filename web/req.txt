@@ -1,0 +1,4 @@
+pygal
+psycopg2
+pyyaml
+flask
