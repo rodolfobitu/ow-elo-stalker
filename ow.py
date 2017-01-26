@@ -8,9 +8,11 @@ import datetime
 import yaml
 import sys
 
+
 def build_url(plat, reg, tag):
 	url = config['api'] + '{}/{}/{}/profile'
 	return url.format(plat,reg,tag)
+
 
 def get_ranked_job():
 	conn = connect()
