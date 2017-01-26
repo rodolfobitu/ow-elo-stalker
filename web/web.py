@@ -58,7 +58,7 @@ def ranks():
 
 
 def main():
-    app.run()
+    app.run(port = config['web-port'])
 
 if __name__ == "__main__":
     config = yaml.load(open('config-web.yaml', 'r').read())
